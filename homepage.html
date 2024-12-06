@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Homepage</title>
+    <!-- Firebase Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-firestore-compat.js"></script>
+    <!-- Custom Script -->
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <div class="homepage-layout">
+        <!-- Header Section -->
+        <header>
+            <div class="dropdown-container">
+                <label for="domain-select">Choose a domain:</label>
+                <select id="domain-select">
+                    <option value="curtwurk">Curtwurk</option>
+                    <option value="bcnet">BCNet</option>
+                </select>
+            </div>
+            <div class="header-buttons">
+                <button class="email-button">Email</button>
+                <button class="logout-button">Logout</button>
+            </div>
+        </header>
+
+        <!-- Sidebar Section -->
+        <aside class="notepad-container">
+            <h2>Shared Notepad</h2>
+            <textarea id="shared-notepad" placeholder="Write something here..."></textarea>
+            <button id="save-notepad">Save</button>
+            <p id="notepad-status"></p>
+        </aside>
+
+        <!-- Main Content Section -->
+        <main id="content-container">
+            <h1>Welcome to the Homepage</h1>
+            <p>Select a domain to view server information.</p>
+        </main>
+    </div>
+</body>
+</html>

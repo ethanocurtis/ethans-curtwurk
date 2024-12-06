@@ -1,0 +1,199 @@
+/* General Reset and Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(20, 17, 15);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1, h2 {
+    color: #D9C5B2;
+    margin: 0;
+}
+
+/* Shared Form Styles (Login and Notepad) */
+input[type="email"], input[type="password"], textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #2e2a28;
+    color: white;
+    box-sizing: border-box;
+}
+
+input[type="email"]:focus, input[type="password"]:focus, textarea:focus {
+    border-color: #7E7F83;
+    outline: none;
+    box-shadow: 0 0 10px rgba(217, 197, 178, 0.5);
+}
+
+.login-button, button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.login-button:hover, button:hover {
+    background-color: #0056b3;
+}
+
+/* Login Page */
+.form-container {
+    background-color: #2e2a28;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Homepage Layout */
+.homepage-layout {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Header Section */
+header {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2e2a28;
+    border-bottom: 1px solid #444;
+}
+
+/* Header Buttons */
+.header-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.email-button {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.email-button:hover {
+    background-color: #218838;
+}
+
+.logout-button {
+    background-color: #d9534f;
+    color: white;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #c9302c;
+}
+
+/* Dropdown Styling */
+.dropdown-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+select {
+    padding: 8px;
+    font-size: 14px;
+    background-color: #2e2a28;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select:focus {
+    border-color: #7E7F83;
+    outline: none;
+    box-shadow: 0 0 10px rgba(217, 197, 178, 0.5);
+}
+
+/* Sidebar Section (Shared Notepad) */
+.notepad-container {
+    padding: 20px;
+    background-color: #2e2a28;
+    border-radius: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #2e2a28;
+    color: white;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+/* Main Content Section */
+main {
+    padding: 20px;
+    background-color: #34312D;
+    border-radius: 10px;
+}
+
+/* Footer Section */
+footer {
+    grid-column: 1 / -1;
+    padding: 20px;
+    background-color: #2e2a28;
+    text-align: center;
+}
+
+.teamspeak-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.teamspeak-container button:hover {
+    background-color: #0056b3;
+}
